@@ -8,7 +8,7 @@
                 $routeProvider = $routeProvider
                     .when( ..... })
                     })
-                    .when(CONSTANT.ROUTES.MAIN_PAGE + '/:extension', {
+                    .when('YOUR_ROUTE', {
                         templateUrl: LAZYLOAD.MODULE.CTRL.TEMPLATE,
                         controller: LAZYLOAD.MODULE.CTRL.NAME,
                         resolve: {
