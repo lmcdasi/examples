@@ -24,6 +24,10 @@
                         redirectTo: ...
                     });
 
+                if ({{YOUR_OAUTH_IS_ENABLED}}) {
+                    $httpProvider.interceptors.push('httpInterceptor');
+                }
+
                 ..................................
                 lazyLoadServiceProvider.init(LAZYLOAD, app, $compileProvider, $controllerProvider, $filterProvider, $provide);
             }])
